@@ -15,7 +15,7 @@ import java.sql.DriverManager;
 public class ConnectionFactory {
      public static Connection getConnection() throws Exception {    
         String username = "root";
-        String password = "root";
+        String password = "";
          Class.forName("com.mysql.jdbc.Driver");
         return (Connection)DriverManager.getConnection("jdbc:mysql://localhost/bookdb", username, password);
     }
